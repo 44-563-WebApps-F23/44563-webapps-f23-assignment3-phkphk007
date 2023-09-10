@@ -67,24 +67,28 @@
     </table>
     <hr />
     <br />
-    <q>
-      Shortcode coming out at the top of content rather than in place where I
-      require it
-    </q>
+    <q> Remove Duplicates from an Array </q>
     <br />
     <a
-      href="https://css-tricks.com/snippets/wordpress/bloginfo-shortcode/"
+      href="https://css-tricks.com/snippets/javascript/remove-duplicates-from-an-array/"
       target="_blank"
       >Link to Source</a
     >
     <pre>
-         function digwp_bloginfo_shortcode( $atts ) {
-            extract(shortcode_atts(array(
-                'key' => '',
-            ), $atts));
-            return get_bloginfo($key);
-         }
-         add_shortcode('bloginfo', 'digwp_bloginfo_shortcode');
+        const array = [1, 1, 1, 3, 3, 2, 2];
+
+        // Method 1: Using a Set
+        const unique = [...new Set(array)];
+        
+        // Method 2: Array.prototype.reduce
+        const unique = array.reduce((result, element) => {
+          return result.includes(element) ? result : [...result, element];
+        }, []);
+        
+        // Method 3: Array.prototype.filter
+        const unique = array.filter((element, index) => {
+          return array.indexOf(element) === index;
+        });
          </pre
     >
   </body>
