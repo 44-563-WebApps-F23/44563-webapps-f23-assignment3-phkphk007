@@ -66,12 +66,11 @@
       </tr>
     </table>
     <hr />
-    <blockquote
-      cite="https://stackoverflow.com/questions/10406673/shortcode-coming-out-at-the-top-of-content-rather-than-in-place-where-i-require"
-    >
+    <br />
+    <q>
       Shortcode coming out at the top of content rather than in place where I
       require it
-    </blockquote>
+    </q>
     <br />
     <a
       href="https://css-tricks.com/snippets/wordpress/bloginfo-shortcode/"
@@ -79,13 +78,14 @@
       >Link to Source</a
     >
     <pre>
-function digwp_bloginfo_shortcode( $atts ) {
+         function digwp_bloginfo_shortcode( $atts ) {
             extract(shortcode_atts(array(
                 'key' => '',
             ), $atts));
             return get_bloginfo($key);
          }
-         add_shortcode('bloginfo', 'digwp_bloginfo_shortcode');</pre
+         add_shortcode('bloginfo', 'digwp_bloginfo_shortcode');
+         </pre
     >
   </body>
 </html>
