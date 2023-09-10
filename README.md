@@ -4,4 +4,4 @@
 
 Assignment 3 - Basic HTML
 
-Hosted at [my assignment 3 Repo link](https://github.com/44-563-WebApps-F23/44563-webapps-f23-assignment3-phkphk007/settings/pages)
+Hosted at [my assignment 3 Repo link](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment3-phkphk007/)
